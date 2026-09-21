@@ -26,8 +26,8 @@ class CalculationEngine:
 
         pct_float = float(pct)
         return {
-            "marks": m,
-            "max_marks": mx,
+            "marks": float(m),
+            "max_marks": float(mx),
             "percentage": pct_float,
             "grade": band_lookup(pct_float, self.config.grade_bands),
             "performance": band_lookup(pct_float, self.config.performance_bands),
